@@ -1,0 +1,35 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <template id="report_invoice_document_custom" inherit_id="account.report_invoice_document">
+           
+            <xpath expr="//p[@t-if='o.comment']" position="replace">
+                <p t-if="o.comment">
+                    <strong>Comment:</strong>
+                    <br/>
+                    <span t-field="o.comment"/>
+                </p>
+            </xpath>
+
+             <xpath expr="//p[@t-if='o.payment_term_id']" position="replace">
+                <p t-if="o.payment_term_id">
+                    <strong>Payment Term:</strong>
+                    <br/>
+                    <span t-field="o.payment_term_id.note"/>
+                </p>
+            </xpath>
+    </template>
+
+    <template id="report_invoice_document_custom_payment_partner" inherit_id="account_payment_partner.report_invoice_payment_mode">
+        <xpath expr="//p[@t-if='o.partner_bank_id']" position="replace">
+            <p t-if="o.partner_bank_id">
+                <strong>Bank Account:</strong>
+<!--                 <t t-if="o.partner_bank_id.bank_id">
+                    <t t-esc="o.partner_bank_id.bank_id.name + ('' if not o.partner_bank_id.bank_id.bic else ' (' + o.partner_bank_id.bank_id.bic + ')')"/>
+                </t> -->
+                <span t-field="o.partner_bank_id.acc_number"/>
+            </p>
+        </xpath>
+    </template>
+
+</odoo>

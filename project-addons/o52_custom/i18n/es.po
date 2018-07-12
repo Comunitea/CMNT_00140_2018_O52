@@ -1,0 +1,36 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* o52_custom
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 11.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2018-07-12 15:40+0000\n"
+"PO-Revision-Date: 2018-07-12 15:40+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: o52_custom
+#: model:ir.ui.view,arch_db:o52_custom.report_invoice_document_custom_payment_partner
+msgid "<strong>Bank Account:</strong>"
+msgstr "<strong>Cuenta bancaria:</strong>"
+
+#. module: o52_custom
+#: model:ir.ui.view,arch_db:o52_custom.report_invoice_document_custom
+msgid "<strong>Comment:</strong>\n"
+"                    <br/>"
+msgstr "<strong>Comentario:</strong>\n"
+"                    <br/>"
+
+#. module: o52_custom
+#: model:ir.ui.view,arch_db:o52_custom.report_invoice_document_custom
+msgid "<strong>Payment Term:</strong>\n"
+"                    <br/>"
+msgstr "<strong>Plazo de pago:</strong>\n"
+"                    <br/>"
+
