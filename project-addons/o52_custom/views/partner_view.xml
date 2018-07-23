@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<odoo>
+
+    <record id="view_partners_add_team" model="ir.ui.view">
+        <field name="name">view.res.partner.add.team</field>
+        <field name="model">res.partner</field>
+        <field name="inherit_id" ref="base.view_partner_form"/>
+        <field eval="18" name="priority"/>
+        <field name="arch" type="xml">
+            <field name="industry_id" position="after">
+                <field name="team_id"/>
+            </field>
+        </field>
+    </record>
+
+</odoo>

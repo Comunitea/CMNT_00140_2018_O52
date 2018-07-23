@@ -7,9 +7,10 @@
     'author': 'Comunitea',
     'license': 'AGPL-3',
     'category': 'Custom',
-    'depends': ['account'],
+    'depends': ['account', 'sales_team'],
     'data': [
         'views/report_invoice.xml',
+        'views/partner_view.xml',
     ],
     'installable': True,
 }
