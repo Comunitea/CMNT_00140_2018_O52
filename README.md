@@ -36,6 +36,9 @@ $ sudo apt-get install libreadline-dev
 ```
 $ sudo easy_install virtualenv
 $ virtualenv -p python3.5 sandbox
+Setuptools
+$ virtualenv -p python3.6 sandbox --no-setuptools
+
 ```
 - Ahora procedemos a ejecutar el buildout en nuestro entorno virtual
 ```
